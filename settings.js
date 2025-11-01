@@ -1,64 +1,65 @@
-////base by DGXeon x Malvin
-//YouTube: @@MalvinKing_TECH
-//Instagram: malvinking20
-//Telegram: t.me/malvinking2
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@MalvinKing_Tech
+//base par Kervens
+//YouTube: @Kervens
+//Instagram: kervens_king
+//Telegram: t.me/soszoe
+//WhatsApp: +50942588377
+//tu veux plus de scripts de bot gratuits? abonne-toi à ma chaîne YouTube: https://youtube.com/@Kervens
 
 const fs = require('fs')
 const chalk = require('chalk')
 
-//contact details
-global.ownernomer = "237682698517"
-global.ownername = "*FARADAY*"
-global.ytname = "YT: Malvin King Tech"
-global.socialm = ""
-global.location = "Zimbabwe, Kwekwe, Newtown"
+//détails de contact
+global.ownernomer = "50942588377"
+global.ownername = "*KERVENS*"
+global.ytname = "YT: Kervens King"
+global.socialm = "GitHub: KervensKing"
+global.location = "Haïti, Port-au-Prince"
 
-global.ownernumber = '263714757857'  //creator number
-global.ownername = 'Malvin' //owner name
-global.botname = 'READY FOR WAR' //name of the bot
+global.ownernumber = '50942588377'  //numéro du créateur
+global.ownername = 'Kervens' //nom du propriétaire
+global.botname = 'KERVENS KING BOT' //nom du bot
 
-//sticker details
-global.packname = 'Sticker By Malvin'
-global.author = 'Hallo\n\nContact: 263714757857'
+//détails du sticker
+global.packname = 'Sticker Par Kervens'
+global.author = 'Bonjour\n\nContact: 50942588377'
 
-//console view/theme
-global.themeemoji = '😡'
-global.wm = "Malvin"
+//vue/theme de la console
+global.themeemoji = '👑'
+global.wm = "Kervens"
 
-//theme link
-global.link = 'https://whatsapp.com/chaVac8SosLY6d7CAFndv3Z'
+//lien du theme
+global.link = 'https://whatsapp.com/channel/0029Va8SosLY6d7CAFndv3Z'
 
-//custom prefix
+//préfixe personnalisé
 global.prefa = ['','!','.','#','&']
 
-//false=disable and true=enable
-global.autoRecording = false //auto recording
-global.autoTyping = false //auto typing
-global.autorecordtype = false //auto typing + recording
-global.autoread = false //auto read messages
-global.autobio = false //auto update bio
-global.anti92 = false //auto block +92 
-global.autoswview = true //auto view status/story
+//false=désactivé et true=activé
+global.autoRecording = false //enregistrement automatique
+global.autoTyping = false //tape automatique
+global.autorecordtype = false //tape + enregistrement automatique
+global.autoread = false //lecture automatique des messages
+global.autobio = false //mise à jour automatique de la bio
+global.anti92 = false //blocage automatique du +92 
+global.autoswview = true //vue automatique du statut/story
 
-//menu type 
-//v1 is image menu, 
-//v2 is link + image menu,
-//v3 is video menu,
-//v4 is call end menu
+//type de menu 
+//v1 est le menu image, 
+//v2 est le menu lien + image,
+//v3 est le menu vidéo,
+//v4 est le menu de fin d'appel
 global.typemenu = 'v1'
 
-//reply messages
+//messages de réponse
 global.mess = {
-    done: 'Done !',
-    prem: 'This feature can be used by premium user only',
-    admin: 'This feature can be used by admin only',
-    botAdmin: 'This feature can only be used when the bot is a group admin ',
-    owner: 'This feature can be used by owner only',
-    group: 'This feature is only for groups',
-    private: 'This feature is only for private chats',
-    wait: 'In process... ',    
-    error: 'Error!',
+    done: 'Terminé !',
+    prem: 'Cette fonctionnalité ne peut être utilisée que par un utilisateur premium',
+    admin: 'Cette fonctionnalité ne peut être utilisée que par un administrateur',
+    botAdmin: 'Cette fonctionnalité ne peut être utilisée que lorsque le bot est administrateur du groupe',
+    owner: 'Cette fonctionnalité ne peut être utilisée que par le propriétaire',
+    group: 'Cette fonctionnalité est uniquement pour les groupes',
+    private: 'Cette fonctionnalité est uniquement pour les chats privés',
+    wait: 'En cours... ',    
+    error: 'Erreur !',
 }
 
 global.thumb = fs.readFileSync('./modsMedia/thumb.jpg')
@@ -66,7 +67,7 @@ global.thumb = fs.readFileSync('./modsMedia/thumb.jpg')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
+    console.log(chalk.redBright(`Mise à jour de '${__filename}'`))
     delete require.cache[file]
     require(file)
 })
